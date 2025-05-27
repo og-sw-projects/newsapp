@@ -29,12 +29,13 @@ A modern Android news reader app built with Jetpack Compose, integrating NewsAPI
 - Material3 design system
 - MockK, Turbine for testing
 
-## Getting Started
-
 ### Prerequisites
 
-- Android Studio Arctic Fox or later
+- Android Studio Meerkat Feature Drop or later
 - Android SDK 31+
+- Java 17
+- Kotlin 1.9+
+- Gradle 8.2+
 
 ### Setup
 
