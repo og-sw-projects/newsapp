@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import com.example.newsapp.R
+import com.example.newsapp.apiKey
 import com.example.newsapp.data.model.Article
 import com.example.newsapp.data.remote.NewsApi
 import com.example.newsapp.data.remote.NewsPagingSource
@@ -19,7 +20,7 @@ class NewsRepository @Inject constructor(
     fun getTopHeadlines(): Pager<Int, Article> = Pager(
         config = PagingConfig(pageSize = 20),
         pagingSourceFactory = {
-            NewsPagingSource(api, context.getString(R.string.news_api_key))
+            NewsPagingSource(api, apiKey)
         }
     )
 }
